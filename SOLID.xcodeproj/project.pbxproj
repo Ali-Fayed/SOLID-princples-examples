@@ -14,6 +14,11 @@
 		6A0D7E1C269743000041BAD8 /* SOLID.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D7E1A269743000041BAD8 /* SOLID.xcdatamodeld */; };
 		6A0D7E1E269743040041BAD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D7E1D269743040041BAD8 /* Assets.xcassets */; };
 		6A0D7E21269743040041BAD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D7E1F269743040041BAD8 /* LaunchScreen.storyboard */; };
+		6A0D7E2A2697432B0041BAD8 /* OCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D7E292697432B0041BAD8 /* OCP.swift */; };
+		6A0D7E2C269743340041BAD8 /* SRP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D7E2B269743340041BAD8 /* SRP.swift */; };
+		6A0D7E2E269743410041BAD8 /* LSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D7E2D269743410041BAD8 /* LSP.swift */; };
+		6A0D7E302697434D0041BAD8 /* ISP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D7E2F2697434D0041BAD8 /* ISP.swift */; };
+		6A0D7E32269743630041BAD8 /* DIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D7E31269743630041BAD8 /* DIP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		6A0D7E1D269743040041BAD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A0D7E20269743040041BAD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A0D7E22269743040041BAD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A0D7E292697432B0041BAD8 /* OCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCP.swift; sourceTree = "<group>"; };
+		6A0D7E2B269743340041BAD8 /* SRP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRP.swift; sourceTree = "<group>"; };
+		6A0D7E2D269743410041BAD8 /* LSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSP.swift; sourceTree = "<group>"; };
+		6A0D7E2F2697434D0041BAD8 /* ISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISP.swift; sourceTree = "<group>"; };
+		6A0D7E31269743630041BAD8 /* DIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,37 @@
 		6A0D7E10269743000041BAD8 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				6A0D7E22269743040041BAD8 /* Info.plist */,
+				6A0D7E33269743770041BAD8 /* APP */,
+				6A0D7E28269743100041BAD8 /* SOLID */,
+			);
+			path = SOLID;
+			sourceTree = "<group>";
+		};
+		6A0D7E28269743100041BAD8 /* SOLID */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D7E2B269743340041BAD8 /* SRP.swift */,
+				6A0D7E292697432B0041BAD8 /* OCP.swift */,
+				6A0D7E2F2697434D0041BAD8 /* ISP.swift */,
+				6A0D7E31269743630041BAD8 /* DIP.swift */,
+				6A0D7E2D269743410041BAD8 /* LSP.swift */,
+			);
+			path = SOLID;
+			sourceTree = "<group>";
+		};
+		6A0D7E33269743770041BAD8 /* APP */ = {
+			isa = PBXGroup;
+			children = (
 				6A0D7E11269743000041BAD8 /* AppDelegate.swift */,
 				6A0D7E13269743000041BAD8 /* SceneDelegate.swift */,
 				6A0D7E15269743000041BAD8 /* ViewController.swift */,
 				6A0D7E17269743000041BAD8 /* Main.storyboard */,
 				6A0D7E1D269743040041BAD8 /* Assets.xcassets */,
 				6A0D7E1F269743040041BAD8 /* LaunchScreen.storyboard */,
-				6A0D7E22269743040041BAD8 /* Info.plist */,
 				6A0D7E1A269743000041BAD8 /* SOLID.xcdatamodeld */,
 			);
-			path = SOLID;
+			path = APP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +171,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0D7E302697434D0041BAD8 /* ISP.swift in Sources */,
+				6A0D7E2E269743410041BAD8 /* LSP.swift in Sources */,
 				6A0D7E16269743000041BAD8 /* ViewController.swift in Sources */,
+				6A0D7E32269743630041BAD8 /* DIP.swift in Sources */,
 				6A0D7E1C269743000041BAD8 /* SOLID.xcdatamodeld in Sources */,
 				6A0D7E12269743000041BAD8 /* AppDelegate.swift in Sources */,
+				6A0D7E2C269743340041BAD8 /* SRP.swift in Sources */,
 				6A0D7E14269743000041BAD8 /* SceneDelegate.swift in Sources */,
+				6A0D7E2A2697432B0041BAD8 /* OCP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
